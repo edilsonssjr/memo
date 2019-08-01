@@ -1,0 +1,20 @@
+{
+    "name": "MEMO",
+    "short_name": "MEMO",
+    "theme_color": "#000",
+    "background_color": "#fdc539",
+    "display": "fullscreen",
+    "start_url": "https://undb.000webhostapp.com/",
+    "icons": [
+        {
+          "src": "icon-192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "icon-512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+}

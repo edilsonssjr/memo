@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MEMO</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="../device-mockups/device-mockups.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">MEMO</a>
+      <div style="text-align: right;" class=" navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img style="width: 20%;" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+          class="avatar rounded-circle img-thumbnail" alt="avatar">
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Configurações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="../index.html">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead busca">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-2 my-auto">
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="panel-vaga">
+            <div class="loading">
+              <img src="https://i2.wp.com/blog.hubilo.com/wp-content/uploads/2017/04/loading-.gif?ssl=1">
+            </div>
+            <div class="tela" style="display: none" id="1">
+              <div class="text-align">
+                <h4 class="text-aprender">Então vamos aprender Espanhol!!</h4>
+              </div>
+              <div class="panel-question">
+                <h3>Marque a opção correta!</h3>
+                <h3>O que significa a palavra <b><i>GRACIAS</i></b>?</h3>
+              </div>
+              <div class="panel-answer">
+                <p onclick="getValue('a',1)"><span>A -</span> Oi</p>
+                <p onclick="getValue('b',1)"><span>B -</span> Bem-vindo</p>
+                <p onclick="getValue('c',1,'ok')"><span>C -</span> Obrigado</p>
+                <p onclick="getValue('d',1)"><span>D -</span> Você</p>
+                <p onclick="getValue('e',1)"><span>E -</span> Casa</p>
+              </div>
+              <img style="width: 30%;" src="https://i.pinimg.com/originals/cb/30/98/cb309830ce7a4e6e7be876e22f925998.gif">
+            </div>
+
+            <div class="tela" style="display: none" id="2">
+              <div class="text-align">
+                <h4 class="text-aprender">Então vamos aprender Espanhol!!</h4>
+              </div>
+              <div class="panel-question">
+                <h3>Marque a opção correta!</h3>
+                <h3>O que significa a palavra <b><i>MUCHO</i></b>?</h3>
+              </div>
+              <div class="panel-answer">
+                <p onclick="getValue('a',2)"><span>A -</span> Pouco</p>
+                <p onclick="getValue('b',2,'ok')"><span>B -</span> Muito</p>
+                <p onclick="getValue('c',2)"><span>C -</span> Muitão</p>
+                <p onclick="getValue('d',2)"><span>D -</span> Mula</p>
+                <p onclick="getValue('e',2)"><span>E -</span> Mulher</p>
+              </div>
+              <img style="width: 30%;" src="https://i.pinimg.com/originals/cb/30/98/cb309830ce7a4e6e7be876e22f925998.gif">
+            </div>
+
+            <div class="tela" style="display: none" id="3">
+              <div class="text-align">
+                <h4 class="text-aprender">Então vamos aprender Espanhol!!</h4>
+              </div>
+              <div class="panel-question">
+                <h3>Marque a opção correta!</h3>
+                <h3>O que significa a palavra <b><i>SALIR</i></b>?</h3>
+              </div>
+              <div class="panel-answer">
+                <p onclick="getValue('a',3)"><span>A -</span> Saltar</p>
+                <p onclick="getValue('b',3)"><span>B -</span> Suar</p>
+                <p onclick="getValue('c',3)"><span>C -</span> Balançar</p>
+                <p onclick="getValue('d',3)"><span>D -</span> Chegar</p>
+                <p onclick="getValue('e',3,'ok')"><span>E -</span> Sair</p>
+              </div>
+              <img style="width: 30%;" src="https://i.pinimg.com/originals/cb/30/98/cb309830ce7a4e6e7be876e22f925998.gif">
+            </div>
+
+            <div class="tela" style="display: none" id="4">
+                <div class="text-align">
+                  <h4 class="text-aprender">Então vamos aprender Espanhol!!</h4>
+                </div>
+                <div class="panel-question">
+                  <h3>Marque a opção correta!</h3>
+                  <h3>O que significa a palavra <b><i>HOMBRE</i></b>?</h3>
+                </div>
+                <div class="panel-answer">
+                  <p onclick="getValue('a',4)"><span>A -</span> Leão</p>
+                  <p onclick="getValue('b',4)"><span>B -</span> Urso</p>
+                  <p onclick="getValue('c',4)"><span>C -</span> Criança</p>
+                  <p onclick="getValue('d',4)"><span>D -</span> Mulher</p>
+                  <p onclick="getValue('e',4,'ok')"><span>E -</span> Homem</p>
+                </div>
+                <img style="width: 30%;" src="https://i.pinimg.com/originals/cb/30/98/cb309830ce7a4e6e7be876e22f925998.gif">
+              </div>
+
+              <div class="tela" style="display: none" id="5">
+                  <div class="text-align">
+                    <h4 class="text-aprender">Então vamos aprender Espanhol!!</h4>
+                  </div>
+                  <div class="panel-question">
+                    <h3>Marque a opção correta!</h3>
+                    <h3>O que significa a palavra <b><i>MUJER</i></b>?</h3>
+                  </div>
+                  <div class="panel-answer">
+                    <p onclick="getValue('a',5,'ok')"><span>A -</span> Mulher</p>
+                    <p onclick="getValue('b',5)"><span>B -</span> Lagartixa</p>
+                    <p onclick="getValue('c',5)"><span>C -</span> Mula</p>
+                    <p onclick="getValue('d',5)"><span>D -</span> Melhor</p>
+                    <p onclick="getValue('e',5)"><span>E -</span> Tigre</p>
+                  </div>
+                  <img style="width: 30%;" src="https://i.pinimg.com/originals/cb/30/98/cb309830ce7a4e6e7be876e22f925998.gif">
+                </div>
+          </div>
+        </div>
+        <div class="col-lg-2 my-auto">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="../js/new-age.min.js"></script>
+
+  <div class="modal fade" id="certo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #014e2a;
+            color: white;
+            text-align: center;">
+              <h5 class="modal-title" id="exampleModalCenterTitle" style="    text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+              text-align: center;
+              margin: 0 auto;">Parabéns!!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0;
+              margin: 0;color: white;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="text-transform: uppercase; color: #014e2a;    background: #014e2a;
+            margin-top: -1%;">
+                <h5 class="modal-title" id="exampleModalCenterTitle" style="    text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 auto;">RESPOSTA CORRETA!</h5>
+            </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="errado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background: #970505;
+            color: white;
+            text-align: center;">
+              <h5 class="modal-title" id="exampleModalCenterTitle" style="    text-transform: uppercase;
+              color: white;
+              font-weight: bold;
+              text-align: center;
+              margin: 0 auto;">Que pena!!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="padding: 0;
+              margin: 0;color: white;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="text-transform: uppercase; color: red;    background: #970604;
+            margin-top: -1%;">
+                <h5 class="modal-title" id="exampleModalCenterTitle" style="    text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 auto;">RESPOSTA ERRADA!</h5>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+
+      <script>
+          function myFunction() {
+            setTimeout(function () {
+              $('.loading').hide();
+              var x = JSON.parse(localStorage.getItem('erradoEsp'))
+              if(x != null){
+                var y = random(x);
+                $('#'+ y).show();
+              }else{
+                $('#1').show();
+              }
+            }, 1500);
+          }
+          myFunction();
+      
+          var opcoes = ['1', '2', '3','4','5'];
+      
+          var certo = [];
+      
+          var errado = []
+      
+          function getValue(p,id,ok) {
+            if(id == 5){
+              if(ok == 'ok'){
+              $('#certo').modal('show'); 
+              $('.loading').show();
+              $('#'+id).hide();
+              id = id + 1
+              $('.loading').hide();
+              $('#'+id).fadeIn(3000); 
+              certo.push(JSON.stringify(id));
+              localStorage.setItem('certo',JSON.stringify(certo))
+             window.location.href = "index.html";
+            }else{
+              $('#errado').modal('show');
+              $('#'+id).hide();
+              $('.loading').show();
+              id = id + 1
+              $('.loading').hide();
+              $('#'+id).fadeIn(3000); 
+              errado.push(JSON.stringify(id));
+              localStorage.setItem('erradoEsp',JSON.stringify(errado))
+             window.location.href = "index.html";
+              }
+            }else{
+              if(ok == 'ok'){
+              $('#certo').modal('show'); 
+              $('.loading').show();
+              $('#'+id).hide();
+              id = id + 1
+              $('.loading').hide();
+              $('#'+id).fadeIn(3000); 
+              certo.push(JSON.stringify(id));
+              localStorage.setItem('certo',JSON.stringify(certo))
+            }else{
+              $('#errado').modal('show');
+              $('#'+id).hide();
+              $('.loading').show();
+              id = id + 1
+              $('.loading').hide();
+              $('#'+id).fadeIn(3000); 
+              errado.push(JSON.stringify(id));
+              localStorage.setItem('erradoEsp',JSON.stringify(errado))
+            }
+            }
+            
+            // if(ok == 'ok'){
+            //   var ingles = JSON.parse(localStorage.getItem('ingles'));
+            //   var x = ingles.questions.filter(function(o){return o.id == id;} );
+            //   if(x != undefined){
+            //     ingles.questions.splice(ingles.questions.indexOf(x[0]),1)
+            //     x[0].ok = 'ok';
+            //     ingles.questions.push(x[0])
+            //     localStorage.setItem('ingles',JSON.stringify(ingles))
+            //     $('#certo').modal('show');
+            //   }
+            //   $('.loading').show();
+            //   $('#'+id).hide();
+            //   id = id + 1
+            //   if(id <= max){
+            //     $('.loading').hide();
+            //     $('#'+id).fadeIn(3000); 
+            //   }else{
+            //     var x = JSON.parse(localStorage.getItem('err'))
+            //     $('.feedback').html(x)
+            //     $('#feedback').modal('show');
+            //     alert('acabou')
+            //   }        
+            // }else{
+            //     $('#errado').modal('show');
+            //     $('#'+id).hide();
+            //     $('.loading').show();
+            //     id = id + 1
+            //     $('.loading').hide();
+            //     $('#'+id).fadeIn(3000); 
+            //     erradasIng.push(JSON.stringify(id));
+            //     localStorage.setItem('err',JSON.stringify(erradasIng))
+            // }
+          }  
+      
+          function random(opcoes) {
+            return opcoes[Math.floor(Math.random() * opcoes.length)];
+          }
+      
+      
+          // $('#id1').on('click', (e) => {
+          //   e.preventDefault();
+          //   const email = $('#inputEmail').val();
+          //   const senha = $('#inputPassword').val();
+          //   if (email === 'admin@admin.com' && senha === 'admin') {
+          //     window.location.href = "index.html";
+          //   } else {
+          //     $('#exampleModalCenter').modal('show');
+          //   }
+          // })
+      
+      
+        </script>
+
+</body>
+
+</html>
